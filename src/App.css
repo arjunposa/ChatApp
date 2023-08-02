@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.App{
+   width: 100vw; 
+   height: 100vh; 
+   background-image: url("./Images/mainimg.jpg");
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content:center ;
+   align-items:center;
+}
+.app-header>h1 {
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.login-card {
+  border: 1px solid white;
+  width: 100px;
+  min-width: 300px;
+  margin: 10px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.466);
+  border-radius: 20px;
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  padding: 10px;
+}
+.btns {
+  width: 300px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.432);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.btn:hover {
+  background: none;
+  border: 1px solid transparent;
+  transform: scale(1.3);
+
+}
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-form>input, .room>input {
+  outline: none;
+  width: 200px;
+  padding: 10px ;
+  border-radius: 10px;
+  border: 1px solid rgb(131, 127, 127);
+  background: rgba(255, 255, 255, 0.39);
+  color: black;
+  font-size: 1.2rem;
+  caret-color: gray;
+}
+.login-form>button, .room>button {
+ 
+  padding: 10px 50px;
+  border: 1px solid rgb(131, 127, 127);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.432);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  
+}
+.login-form>p, .room>label {
+  font-size: 1.2rem;
+}
+.sign-out>.btn-signout{
+  width: 300px;
+  padding: 10px 30px;
+  border: 1px solid rgb(131, 127, 127);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.432);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.room, .chat-app, .new-message-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.new-message-form>input {
+  outline: none;
+  width: 100%;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(131, 127, 127);
+  background: rgba(255, 255, 255, 0.39);
+  color: black;
+  font-size: 1.2rem;
+  caret-color: gray
+} 
+.new-message-form>button {
+  padding: 10px 50px;
+  border: 1px solid rgb(131, 127, 127);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.432);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.messages {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid transparent ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:  column;
+  gap: 10px;
+  padding: 10px;
+  overflow: scroll;
+}
+.messages>div>p {
+  display: block;
+  padding: 2px 5px;
+  text-transform: capitalize;
+  color: blue;
+  float: right;
+  
+}
